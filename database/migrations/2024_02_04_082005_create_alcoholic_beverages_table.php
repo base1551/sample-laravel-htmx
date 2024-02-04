@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('alcoholic_beverages', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->comment('お酒の名前');
+            $table->string('alcohol_content')->comment('アルコール度数');
             $table->timestamps();
         });
     }
